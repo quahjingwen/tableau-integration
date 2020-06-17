@@ -9,7 +9,7 @@ def hello():
   return "Hello Worldddd!"
 
 # A route to upload revevant csv files to google sheets
-@app.route('/csv_post', methods=['POST'])
+@app.route('/csv-post', methods=['POST'])
 def upload_csv():
     if not request.files['file']:
         abort(400)
